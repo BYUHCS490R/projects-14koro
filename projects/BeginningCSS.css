@@ -1,0 +1,23 @@
+body {
+    background-color: #F4D35E;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+h1 {
+    color:#083D77 ;
+    font-style: italic;
+}
+
+
+#idea {
+    color:#F95738 ;
+}
+
+.classic {
+    color:#EE964B ;
+}
+
+dd {
+    color: purple;
+}
