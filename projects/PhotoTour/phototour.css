@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(JPbackground.jpeg) pink;
+}
+
+nav a {
+    color: blue;
+}
+
+.current {
+    color: black;
+    text-decoration: none;
+}
+
+main h2{ 
+    color: green;
+    text-decoration: underline;
+}
+
+.map {
+    background-image: url(JapanMap.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.jp {
+    list-style-image: url(JP.jpg);
+}
