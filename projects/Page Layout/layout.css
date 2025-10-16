@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(214, 255, 255);
+}
+
+nav {
+    background-color: rgb(70, 248, 254);
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 2px;
+}
+
+.title {
+    color: rgb(247, 247, 247);
+    background: aquamarine ;
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 48px;  
+    font-weight: heavy;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px black;
+}
+
+.aj1 {
+    float: right;
+    margin: auto;
+    border: 2px solid black;
+    height: 290px;
+    width: 380px;
+    border-radius: 1px;
+    box-shadow: inset 0 0 10px rgb(255, 255, 255);
+}
+
+.chicago {
+    color: red;
+    text-shadow: 2px 2px 4px black;
+}
+
+header {
+    background: url(nike.png) no-repeat right;
+}
+
+.clear {
+    margin:auto;
+
+}
+
