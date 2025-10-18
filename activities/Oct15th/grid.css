@@ -1,0 +1,38 @@
+body  {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+.child {
+    background-color: lightblue;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "top top top"
+        "left center right"
+        "bottom bottom bottom";
+        
+}
+
+header {
+    grid-area: top;
+}
+
+nav {
+    grid-area: left;
+}
+
+main {
+    grid-area: center;
+}
+
+footer {
+    grid-area: bottom;
+}
