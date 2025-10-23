@@ -16,6 +16,11 @@ nav {
     width: 100%;
 }
 
+aside {
+    width 20%;
+    padding: 10px;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
