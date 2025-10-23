@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: pink;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    width: 100%;
+}
+
+figure {
+    border: 3px solid black;
+    margin: 10px;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 3px;
+}
+
+figure img {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(5,4fr);
+}
