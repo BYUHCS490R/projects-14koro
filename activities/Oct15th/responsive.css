@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: yellow;
+    color: burlywood;
+}
+
+nav a:hover {
+    background-color: orange;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgray;
+}
+
+.mainrow {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar {
+    width: 60%;
+}
+
+.card img {
+    width:100%;
+}
+
+.card {
+    width: 30%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+    margin: 5px;
+}
