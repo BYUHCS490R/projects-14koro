@@ -44,3 +44,24 @@ nav {
     box-shadow: 2px 2px 5px gray;
     margin: 5px;
 }
+
+@media ONLY screen AND (max-width: 400px) {
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    .mainrow {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+    .maincard {
+        order: -1;
+    }
+}
