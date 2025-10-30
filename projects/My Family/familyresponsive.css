@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightyellow;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgray;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: yellow;
+    color: burlywood;
+}
+
+.mainrow {
+    display: flex;
+}
+
+.sidebar {
+    flex-basis: 30%;
+}
+
+main {
+    flex-basis: 70%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 30%;
+    border: 2px solid red;
+    box-shadow: 2px 2px 5px orange;
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+.card img {
+    width:100%;
+}
+
+@media ONLY screen AND (max-width: 400px) {
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    .mainrow {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    main {
+        order: -1;
+    }
+}
