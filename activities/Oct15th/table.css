@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.schedule{
+    caption-side: bottom;
+    border-spacing: 0;
+
+}
+
+.schedule thead tr {
+    background-color: pink;
+    color: white;
+}
+
+.schedule tfoot tr {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.num {
+    vertical-align: top;
+}
