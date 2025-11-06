@@ -8,13 +8,16 @@ nav {
 }
 
 .position {
-    display: flex;
+    display: flex; 
 }
 
 aside {
     width: 30%;
     padding: 10px;
-    
+}
+
+.main {
+    width: 70%;
 }
 
 .BoxOffice {
