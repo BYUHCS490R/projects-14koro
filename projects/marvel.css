@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.position {
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    padding: 10px;
+}
+
+.BoxOffice {
+    caption-side: bottom;
+    border-spacing: 2;
+    border: thin solid black;
+}
+
+.BoxOffice thead tr {
+    background-color: lightblue;
+}
+
+.first {
+background-color: gold;
+}
+
+.second {
+    background-color: silver;
+}
+.third {
+    background-color: #cd7f32;
+}
+
+.fourth {
+    background-color: antiquewhite;
+}
+
+.fifth {
+    background-color: beige;
+}
+
+.sixth {
+    background-color: blanchedalmond;
+}
+
+.BoxOffice tfoot tr {
+    background-color: aqua;
+}
