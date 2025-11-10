@@ -12,50 +12,70 @@
     </header>
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html">
-            <div>
-                <label for="full-name">Full Name: </label>
-                <input type="text" name="fname" id="full-name"><br>
-            </div>
-            <div>
-                <label for="Email">Email: </label>
-                <input type="email" name="email" id="Email"><br>
-            </div>
-            <div>
-                <label for="Password">Password: </label>
-                <input type="password" name="password" id="Password"><br>
-            </div>
-            <div>
-                <label for="state">State: </label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="CA">California</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="TX">Texas</option>
-                    <option value="NY">New York</option>
-                </select>
-            </div>
-            <div>
-                <label><input type="checkbox" name="agree">I agree t the terms</label>
-            </div>
-            <div>
-                Gender:
-                <label><input type="radio" name="Gender">Male</label>
-                <label ><input type="radio" name="Gender">Female</label>
-            </div>
-            <div>
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments"></textarea>
-            </div>
-            <input type="submit" value="Sign Up">
+        <form action="formprocess.html" method="post">
+            <fieldset>
+                <legend>Sign Up Sheet</legend>
+                <div class="form-row">
+                    <label for="full-name">Full Name: </label>
+                    <input type="text" name="fname" id="full-name"><br>
+                </div>
+                <div class="form-row">
+                    <label for="Email">Email: </label>
+                    <input type="email" name="email" id="Email"><br>
+                </div>
+                <div class="form-row">
+                    <label for="Password">Password: </label>
+                    <input type="password" name="password" id="Password"><br>
+                </div>
+                
+                <div class="form-row">
+                    <label for="state">State: </label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="TX">Texas</option>
+                        <option value="NY">New York</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree">I agree to the terms</label>
+                </div>
+                <div class="check-row">
+                    
+                    <div class="spacer">Gender: </div>
+                    <label><input type="radio" name="Gender">Male</label>
+                    <label ><input type="radio" name="Gender">Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments: </label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
         </form>
-    <h1>Questions</h1>
-    <h2>The form tag has an "action" attribute. What does it do?</h2>
-    <p>The action attribute specifies where the information entered via the form should be submitted.</p>
-    <h2>The form tag has a "method" attribute. What does it do?</h2>
-    <p>The method attribute specifies how the submitted data is sent.</p>
-    <h2>What is the difference between a "POST" and a "GET"?</h2>
-    <p>Get displays the entered information in the URL, but Post does not.</p>
+        <div class="questions">
+            <div>
+                <h1>Questions</h1>
+                <h2>The form tag has an "action" attribute. What does it do?</h2>
+                <p>The action attribute specifies where the information entered via the form should be submitted.</p>
+                <h2>The form tag has a "method" attribute. What does it do?</h2>
+                <p>The method attribute specifies how the submitted data is sent.</p>
+                <h2>What is the difference between a "POST" and a "GET"?</h2>
+                <p>Get displays the entered information in the URL, but Post does not.</p>
+            </div>
+            <div>
+                <h1>Questions 2</h1>
+                <h2>What are different ways to style your form?</h2>
+                <p>You can adjust the position using display, width, margin, padding, etc.</p>
+                <h2>How does flex help for both Desktop and Mobile phones?</h2>
+                <p>Using Flex allows you to configure screen displays tailored for laptops and mobile devices respectively.</p>
+            </div>
+        </div>
     </main>
 
     <footer>&copy;2025 Isshin Kishi</footer>
