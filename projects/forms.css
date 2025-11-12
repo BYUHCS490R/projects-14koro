@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 252, 244);
+}
+
+header, footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(148, 148, 228);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type="submit"]), .form-row select, .form-row textarea {
+    background-color: rgb(227, 230, 252);
+    border: 2px solid gray;
+    width: 200px;
+}
+
+.form-row input[type="submit"] {
+    width: 100px;
+    font-weight: bold;
+    background-color: rgb(148, 148, 228);
+    color: white;
+    border: none;
+}
+
+.form-row input[type=number] {
+    width: 100px;
+}
+
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+fieldset {
+    border: 3px solid rgb(148, 148, 228);
+}
+
+legend {
+    font-weight: bold;
+    color: rgb(148, 148, 228);
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        width: auto;
+        text-align: left;
+    }
+
+    .form-row input:not([type="submit"]), .form-row select, .form-row textarea {
+        width: 100%;
+    }
+
+    .form-row input[type="submit"] {
+        width: 100%;
+    }
+
+}
