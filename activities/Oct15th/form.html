@@ -16,8 +16,8 @@
             <fieldset>
                 <legend>Sign Up Sheet</legend>
                 <div class="form-row">
-                    <label for="full-name">Full Name: </label>
-                    <input type="text" name="fname" id="full-name"><br>
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" name="fname" id="fullname"><br>
                 </div>
                 <div class="form-row">
                     <label for="Email">Email: </label>
@@ -76,8 +76,50 @@
                 <p>Using Flex allows you to configure screen displays tailored for laptops and mobile devices respectively.</p>
             </div>
         </div>
+        <h1>Questions 3</h1>
+        <h2>What is JavaScript? How did it get its name?</h2>
+        <p>JavaScript is a programming language that adds movement and functionality to web pages.</p>
+        <p>At the time, the “Java” language was hugely popular,
+so it seems they renamed it from LiveScript to JavaScript
+as a marketing strategy to ride that wave of popularity.</p>
+        <h2>What are the two ways you can run JavaScript?</h2>
+        <p>There are two ways to run JavaScript: within the browser and on the server.</p>
+        <h2>What was the most popular front-end js library?</h2>
+        <p>That was jQuery</p>
+        <h2>What is the most popular front-end js library today?</h2>
+        <p>That is React</p>
     </main>
 
     <footer>&copy;2025 Isshin Kishi</footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+
+            const fullname = document.getElementById('full-name').value;
+            const email = document.getElementById('Email').value;
+            const password = document.getElementById('Password').value;
+            const state = document.getElementById('state').value;
+
+            if (!fullname || !email || !password || state === 'blank') {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            if (!age || age < 18) {
+                alert('You must be at least 18 years old to submit this form.');
+                return;
+            }
+
+            const formData = {
+                fullName: fullname,
+                email: email,
+                password: password,
+                state: state
+            };
+
+            console.log(formData);
+        })
+    </script>
 </body>
 </html>
