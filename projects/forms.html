@@ -12,19 +12,19 @@
     </header>
     <main>
         <h2>Please fill out the form</h2>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm" onsubmit="handleSubmit(event)">
             <fieldset>
                 <legend>Sign Up Sheet</legend>
                 <div class="form-row">
-                    <label for="first-name">First Name: </label>
-                    <input type="text" name="fname" id="First-name"><br>
+                    <label for="Fname">First Name: </label>
+                    <input type="text" name="fname" id="Fname"><br>
                 </div>
                 <div class="form-row">
-                    <label for="last-name">Last Name: </label>
-                    <input type="text" name="lname" id="Last-name"><br>
+                    <label for="Lname">Last Name: </label>
+                    <input type="text" name="lname" id="Lname"><br>
                 </div>
                 <div class="form-row">
-                    <label for="last-name">Age: </label>
+                    <label for="Age">Age: </label>
                     <input type="number" name="age" id="Age" min="18" max="130" placeholder="18-130"><br>
                 </div>
                 <div class="form-row">
@@ -37,8 +37,8 @@
                 </div>
                 
                 <div class="form-row">
-                    <label for="state">Country: </label>
-                    <select name="state" id="state">
+                    <label for="Country">Country: </label>
+                    <select name="country" id="Country">
                         <option value="blank">---</option>
                         <option value="US">United States</option>
                         <option value="RU">Russia</option>
@@ -49,12 +49,12 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox" name="agree">I agree to the terms</label>
+                    <label><input type="checkbox" name="agree"> I agree to the terms</label>
                 </div>
                 <div class="check-row">
                     <div class="spacer">Gender: </div>
-                    <label><input type="radio" name="Gender">Male</label>
-                    <label ><input type="radio" name="Gender">Female</label>
+                    <label><input type="radio" name="Gender" value="male"> Male</label>
+                    <label><input type="radio" name="Gender" value="female"> Female</label>
                 </div>
                 <div class="form-row">
                     <label for="comments">Comments: </label>
@@ -66,9 +66,9 @@
                 </div>
             </fieldset>
         </form>
-        
+        <div id="response-message"></div>
     </main>
-
+    <script src="forms.js"></script>
     <footer>&copy;2025 Isshin Kishi</footer>
 </body>
 </html>
