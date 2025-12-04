@@ -16,8 +16,8 @@ nav {
 }
 
 nav a {
-    display: black;
-    padding: 10px;
+    display: block;
+    padding: 10px 20px;
     background-color: lightgrey;
     color: azure;
     text-decoration: none;
@@ -26,6 +26,20 @@ nav a {
 nav a.active {
     background-color: navy;
     color: white;
+}
+
+main h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: chocolate;
+}
+
+main h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: darkorange;
 }
 
 /* Home */
@@ -47,7 +61,38 @@ nav a.active {
 
 .card h3 {
     margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 24px;
 }
+
+/* Workouts */
+
+.exsercise {
+    display : flex;
+}
+.exsercise div {
+    margin-right: 20px;
+}
+
+.exsercise img {
+    border-radius: 10px;
+    max-width: 300px;
+    height: auto;
+    border: solid 2px black ;
+}
+
+/* Food */
+
+.foods {
+    background-color: #f4b9b9;
+    border: solid 2px black;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1 1 250px;
+    box-sizing: border-box;
+}
+
 
 /* Experience */
 
@@ -59,6 +104,36 @@ nav a.active {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+/* Schedule */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid black;
+
+}
+
+table th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+table thead {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+/* My Experience */
+
+.float {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 70%;
     border-radius: 10px;
 }
 
@@ -96,4 +171,48 @@ img {
 .spacer {
     width: 150px;
     text-align: right;
+}
+
+iframe {
+    width: 100%;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .float {
+        float: none;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        width: auto;
+        text-align: left;
+    }
+
+    .form-row input:not([type="submit"]), .form-row select, .form-row textarea {
+        width: 100%;
+    }
+
+    .exsercise {
+        flex-direction: column;
+    }  
+
+    .exsercise div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .exsercise img {
+        max-width: 100%;
+    }
+
 }

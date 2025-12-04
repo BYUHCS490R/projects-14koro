@@ -19,10 +19,14 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Me</h1>
+        <h1>Contact Form</h1>
+        <p>
+            If you have any questions about exercise routines, diet plans, or need personalized advice, please fill out the form below. 
+            I'll get back to you as soon as possible!
+        </p>
         <form action="formprocess.html" method="post" id="myForm" onsubmit="handleSubmit(event)">
             <fieldset>
-                <legend>Sign Up Sheet</legend>
+                <legend>Comments</legend>
                 <div class="form-row">
                     <label for="Fname">First Name: </label>
                     <input type="text" name="fname" id="Fname"><br>
@@ -55,10 +59,6 @@
                         <option value="KR">Korean</option>
                         <option value="IT">Itarian</option>
                     </select>
-                </div>
-                <div class="check-row">
-                    <div class="spacer"></div>
-                    <label><input type="checkbox" name="agree"> I agree to the terms</label>
                 </div>
                 <div class="form-row">
                     <label for="comments">Comments: </label>
